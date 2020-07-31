@@ -5,6 +5,8 @@ import (
 	"math"
 )
 
+// a functor has to be defined in all our subset of types extensively
+// for now only Int and String
 type IFunctorInt interface {
 	fmapI(fn func(int) int) IFunctorInt
 	fmapS(fn func(int) string) IFunctorString
